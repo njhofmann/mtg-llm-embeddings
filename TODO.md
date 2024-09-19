@@ -1,0 +1,5 @@
+- paths file
+- src dirc
+- clean up code
+- documentation
+- setup instructions
