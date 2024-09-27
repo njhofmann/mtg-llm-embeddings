@@ -5,7 +5,7 @@ In plain English think of this project saying "what cards in this category of ca
 # Examples
 - which black instant with mana value equal to 2 is most like [Path to Exile](https://scryfall.com/card/otc/85/path-to-exile) --> [Eliminate](https://scryfall.com/card/m21/97/eliminate?utm_source=api)
     - `python src/search.py -c Path to Exile -q cmc=2 t:instant c=b`
-- which red enchantment is most like [Rhystic Study]([https://scryfall.com/card/otc/85/path-to-exile](https://scryfall.com/card/jmp/169/rhystic-study)) --> [Knowledge and Power]([https://scryfall.com/card/m21/97/eliminate?utm_source=api](https://scryfall.com/card/jou/101/knowledge-and-power?utm_source=api))
+- which red enchantment is most like [Rhystic Study](https://scryfall.com/card/jmp/169/rhystic-study) --> [Knowledge and Power](https://scryfall.com/card/jou/101/knowledge-and-power?utm_source=api)
     - `python src/search.py -c Rhystic Study -q c=r t:enchantment`
 
 # Setup
