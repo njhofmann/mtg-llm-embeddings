@@ -8,6 +8,4 @@
     1. `python src/search -h` for all supported arguments
 
 
-<video width="630" height="300" src="https://imgur.com/a/ubLAomJ"></video>
-
-    
+![example](https://i.imgur.com/YqjS7xD.gif)
