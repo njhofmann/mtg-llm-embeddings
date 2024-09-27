@@ -7,5 +7,4 @@
     1. [Scryfall syntax guide](https://scryfall.com/docs/syntax)
     1. `python src/search -h` for all supported arguments
 
-
-https://i.imgur.com/rXDdYdD.mp4
+  [Screencastfrom2024-09-2714-03-46-ezgif.com-video-to-gif-converter.webm](https://github.com/user-attachments/assets/d304fdf5-835b-43d8-84b6-fa1c338594a1)
