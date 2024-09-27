@@ -8,4 +8,4 @@
     1. `python src/search -h` for all supported arguments
 
 
-![example](https://i.imgur.com/YqjS7xD.gif)
+![example](https://i.imgur.com/rXDdYdD.mp4)
