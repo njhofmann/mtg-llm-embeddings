@@ -7,5 +7,5 @@
     1. [Scryfall syntax guide](https://scryfall.com/docs/syntax)
     1. `python src/search -h` for all supported arguments
 
-
-https://i.imgur.com/rXDdYdD.mp4
+## Tips
+- the more specific the query the faster the search time

@@ -8,10 +8,10 @@
     - scryfall for filter + (card + embedding)
 - documentation
 - setup instructions
-- setup fast api routes / common methods for search
-    - given X cards, sort into groups (may have opitonal)
-    - scryfall + conditioning w card
-    - how similar are two decks
-    - most similar cards to X, or X & Y
-
+- common methods for search
+    - [ ] given X cards, sort into N groups (clustering)
+    - [x] scryfall + conditioning w card
+        - [x] multiple cards
+    - [ ] how similar are two decks (Maximum Mean Discrepancy)
+- fastapi setup
 

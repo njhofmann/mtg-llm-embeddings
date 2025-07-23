@@ -26,7 +26,6 @@ def create_batch_request(client):
         completion_window="24h",
     )
 
-
     print(f'batch request create finished')
     print(f'batch request id {batch_info.id}')
     with open(paths.BATCH_ID_FILE, 'w') as f:
@@ -55,6 +54,8 @@ def retrieve_batch_response(client):
                 f.write(file_response.text)
         
         print(f'finished retrieving reponse')
+        return True
+    return False
 
 
 def list_batch_requests(client):
@@ -68,17 +69,11 @@ def cancel_batch_request(client):
     client.batches.cancel(batch_id)
 
 
-def get_args():
-    parser = ap.ArgumentParser()
-    parser.add_argument('action')
-    return parser.parse_args()
-
-
-if __name__ == '__main__':
+def main(action):
     with open('OPENAI_SECRET_KEY', 'r') as f:
         client = OpenAI(api_key=f.read())
 
-    match get_args().action:
+    match action:
         case 'create':
             create_batch_request(client)
         case 'retrieve':
@@ -89,3 +84,14 @@ if __name__ == '__main__':
             list_batch_requests(client)
         case a:
             raise ValueError(f'unsupported action {a}')
+
+
+def get_args():
+    parser = ap.ArgumentParser()
+    parser.add_argument('action')
+    return parser.parse_args()
+
+
+if __name__ == '__main__':
+    args = get_args()
+    main(args.action)

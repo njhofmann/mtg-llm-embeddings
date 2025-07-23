@@ -1,4 +1,5 @@
 import pathlib as pl
+import pickle
 
 DATA_DIRC = pl.Path('data')
 DATA_DIRC.mkdir(parents=True, exist_ok=True)
@@ -12,3 +13,12 @@ RESPONSE_FILE = RESPONSE_DIRC / 'reponses.jsonl'
 ERROR_FILE = RESPONSE_DIRC / 'error.jsonl'
 
 EMBEDDINGS_FILE = RESPONSE_DIRC / 'embeddings.pkl'
+
+EMBEDDING_INFO = None
+
+def get_embeddings():
+    global EMBEDDING_INFO
+    if EMBEDDING_INFO is None:
+        with open(EMBEDDINGS_FILE, 'rb') as f:
+            EMBEDDING_INFO = pickle.load(f)
+    return EMBEDDING_INFO

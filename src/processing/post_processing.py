@@ -24,7 +24,7 @@ def post_processing_2():
         pickle.dump(card_jsons, f)
 
 
-def post_processing():
+def main():
     names_to_embeddings = {}
     with open(paths.RESPONSE_FILE, 'r') as f:
         for (i, response_json) in enumerate(f.readlines()):
@@ -36,4 +36,4 @@ def post_processing():
 
 
 if __name__ == '__main__':
-    post_processing()
+    main()
